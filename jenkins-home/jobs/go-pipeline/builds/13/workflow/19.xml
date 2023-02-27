@@ -1,0 +1,45 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@839.v35e2736cfd5c">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@3618.v13db_a_21f0fcf">
+    <parentIds>
+      <string>18</string>
+    </parentIds>
+    <id>19</id>
+    <descriptorId>org.jenkinsci.plugins.credentialsbinding.impl.BindingStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3618.v13db_a_21f0fcf">
+      <arguments>
+        <entry>
+          <string>bindings</string>
+          <list>
+            <org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+              <symbol>usernamePassword</symbol>
+              <arguments class="linked-hash-map">
+                <entry>
+                  <string>credentialsId</string>
+                  <string>git123456</string>
+                </entry>
+                <entry>
+                  <string>usernameVariable</string>
+                  <string>GIT_USERNAME</string>
+                </entry>
+                <entry>
+                  <string>passwordVariable</string>
+                  <string>GIT_PASSWORD</string>
+                </entry>
+              </arguments>
+              <interpolatedStrings/>
+            </org.jenkinsci.plugins.workflow.cps.UninstantiatedDescribableWithInterpolation>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1208.v0cc7c6e0da_9e">
+      <startTime>1677406814246</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>

@@ -1,0 +1,29 @@
+<?xml version='1.1' encoding='UTF-8'?>
+<Tag plugin="workflow-support@839.v35e2736cfd5c">
+  <node class="cps.n.StepStartNode" plugin="workflow-cps@3618.v13db_a_21f0fcf">
+    <parentIds>
+      <string>16</string>
+    </parentIds>
+    <id>17</id>
+    <descriptorId>org.jenkinsci.plugins.workflow.steps.EnvStep</descriptorId>
+  </node>
+  <actions>
+    <s.a.LogStorageAction/>
+    <cps.a.ArgumentsActionImpl plugin="workflow-cps@3618.v13db_a_21f0fcf">
+      <arguments>
+        <entry>
+          <string>overrides</string>
+          <list>
+            <string>GOROOT=/var/jenkins_home/tools/org.jenkinsci.plugins.golang.GolangInstallation/1.20.1</string>
+            <string>PATH+GOROOT_BIN=/var/jenkins_home/tools/org.jenkinsci.plugins.golang.GolangInstallation/1.20.1/bin</string>
+          </list>
+        </entry>
+      </arguments>
+      <sensitiveVariables/>
+      <isUnmodifiedBySanitization>true</isUnmodifiedBySanitization>
+    </cps.a.ArgumentsActionImpl>
+    <wf.a.TimingAction plugin="workflow-api@1208.v0cc7c6e0da_9e">
+      <startTime>1677385588068</startTime>
+    </wf.a.TimingAction>
+  </actions>
+</Tag>
